@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-    #top_of_page{
-      font-family:Avenir
+  <link rel="stylesheet" href="mystyle.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+      /* Set the width of the sidebar to 250px (show it) */
+    function openNav() {
+      document.getElementById("menu_sidepanel").style.width = "250px";
     }
-    #heading{
-      font-family:Big Caslon;
-      margin-left: 100px;
-      color:blue;
-      font-size:50px
-    }
-    #content{
-      font-family:Big Caslon
-    }
-  </style>
+
+    /* Set the width of the sidebar to 0 (hide it) */
+    function closeNav() {
+      document.getElementById("menu_sidepanel").style.width = "0";
+    } 
+  </script>
 </head>
-<body style = "background-color: #ffe6e6">
-      <div id = "top_of_page" align = "middle" >
-         <a href = "/index.html">Home</a> |
-         <a href = "/contact.html">Contact</a>
-      </div>
+<body>
 
-      <div id = "content" align = "middle">
-        <h1>Send me an e-mail!</h1>
-      </div>
+  <button id="sidebar_btn" onclick="openNav()">&#9776;</button>
+
+  <div id="menu_sidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776;</a>
+    <div style="margin-left: 20%;">
+      <a href="#">About</a>
+      <a href="#">Subpage</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </div>
+
+  <main>
+    <div id="header">
+      <h1">Send me an e-mail!</h1>
+    </div>
+
+    <div id="col content" class="col content">
       <form  id = "content" align = "middle" action="mailto:someone@example.com" method="post" enctype="text/plain"><br>
-      Name:<br>
-      <input type="text" name="name" size="40"><br>
-      E-mail:<br>
-      <input type="text" name="mail" size="40"><br>
-      Message:<br>
-      <input type="text" name="message" size="40" style="height:150"><br><br>
-      <input type="submit" value="Send">
-      <input type="reset" value="Reset">
+        Name:<br>
+        <input type="text" name="name" size="40"><br>
+        E-mail:<br>
+        <input type="text" name="mail" size="40"><br>
+        Message:<br>
+        <input type="text" name="message" size="40" style="height:150"><br><br>
       </form>
+      <button id = "content_btn">Submit!</button>
+    </div>
 
-    </body>
+  </main>
+</body>
 </html>

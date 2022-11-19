@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-  #top_of_page{
-    font-family:Avenir
-  }
-  #heading{
-    font-family:Big Caslon;
-    margin-left: 100px;
-    color:blue;
-    font-size:50px
-  }
-  #content{
-    font-family:Big Caslon;
-    margin-left: 200px
-  }
-</style>
+  <link rel="stylesheet" href="mystyle.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+      /* Set the width of the sidebar to 250px (show it) */
+    function openNav() {
+      document.getElementById("menu_sidepanel").style.width = "250px";
+    }
+
+    /* Set the width of the sidebar to 0 (hide it) */
+    function closeNav() {
+      document.getElementById("menu_sidepanel").style.width = "0";
+    } 
+  </script>
 </head>
-<body style = "background-color: #ffe6e6">
-      <div id = "top_of_page" align = "right">
-         <a href = "/index.html">Home</a> |
-         <a href = "/contact.html">Contact</a>
-      </div>
+<body>
 
-      <div id = "heading">
-        <h1 align = "left">Hello World</h1>
-      </div>
+  <button id="sidebar_btn" onclick="openNav()">&#9776;</button>
 
-      <div id="content" align="left">
-        <p>I'm hosted with GitHub Pages.</p>
-        <a href = "/bachelor.html">Cool networks here!</a>
-      </div>
+  <div id="menu_sidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776;</a>
+    <div style="margin-left: 20%;">
+      <a href="#">About</a>
+      <a href="#">Subpage</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </div>
 
-      <div id = "content" align = "midle" >
-        <iframe src="/frontpageplot.html" style="border:none" width="600" height="600">
-        </iframe>
+
+
+  <main>
+    <div id="header">
+      <h1">Hello World</h1>
+    </div>
+
+    <div id="col content" class="col content">
+      <p>I'm hosted with  Pages. Here is a <a href="https://google.com">link</a></p>
+      <button id = "content_btn">Click here!</button>
+    </div>
+
+  </main>
+
 </body>
 </html>

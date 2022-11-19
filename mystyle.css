@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
+
+
+
+/* 
+color palette 
+color: rgb(255, 255, 255) white
+color : rgb(29, 31, 35) darker black
+color: rgb(59, 63, 69) black
+color: rgb(63, 255, 178); light green
+color: rgb(62, 236, 255); light blue
+color: rgb(151, 244, 255); ligther blue
+color: rgb(255, 61, 139); ligth red
+
+
+*/
+
+
+body {
+  color:rgb(62, 236, 255);
+  background-color:rgb(29, 31, 35);
+}
+
+
+main {
+  width: 60%;
+  margin: auto;
+}
+
+#header {
+  font-family: "Lora", serif;
+  font-size: 48px;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+
+.col.content {
+  font-family: "DM Sans", serif;
+  width: 75%; 
+  font-size: 16px;
+}
+
+.col.content a {
+  font-family: "DM Sans", serif;
+  color:rgb(62, 236, 255);
+  width: 75%; 
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.col.content a:hover {
+  font-family: "DM Sans", serif;
+  color:rgb(62, 194, 255);
+  width: 75%; 
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+#content_btn {
+  margin: 4px 2px;
+  font-family: "DM Sans", serif;
+  font-size: 16px;
+  border: none;
+  padding: 10px 24px;
+  text-align: center;
+  border-radius: 20px;
+  background-color:rgb(62, 236, 255);
+  color:rgb(29, 31, 35);
+  cursor: pointer;
+  transition: 0.3s;
+  }
+  
+#content_btn:hover {
+  margin: 4px 2px;
+  font-family: "DM Sans", serif;
+  font-size: 16px;
+  border: none;
+  padding: 10px 24px;
+  text-align: center;
+  border-radius: 20px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+#sidepanel_default {
+  width: 5%;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 61, 139); 
+}
+
+
+ /* The sidepanel menu */
+ .sidepanel {
+  width: 0; /* 0 width - change this with JavaScript */
+  height: 100vh;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */ 
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 61, 139); 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  padding-bottom: 60px;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-family: "Lora", serif;
+  font-size: 25px;
+  color: #131516;
+  display: block;
+  transition: 0.1s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  font-weight: bold;
+}
+
+/* Position and style the close button  */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  font-size: 36px;
+  cursor: pointer;
+  padding: 12px 15px;
+}
+
+/* Style the button that is used to open the sidepanel */
+#sidebar_btn {
+  position: absolute;
+  top: 0;
+  font-size: 36px;
+  cursor: pointer;
+  padding: 12px 15px;
+  color:rgb(62, 236, 255);
+  background-color:rgb(29, 31, 35);
+  border: none;
+}
+
+#sidebar_btn:hover {
+  font-weight: bolder;
+  color: rgb(151, 244, 255);
+} 
+
