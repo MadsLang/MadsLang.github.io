@@ -41,6 +41,14 @@ main {
   margin: auto;
 }
 
+footer {
+  height: 20%;
+  margin: auto;
+  text-align: right;
+  font-family: "DM Sans", serif;
+  font-size: 10px;
+}
+
 #header {
   font-family: "Lora", serif;
   font-size: 48px;
@@ -128,10 +136,10 @@ main {
 
 /* The sidepanel links */
 .sidepanel a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 8px;
   text-decoration: none;
   font-family: "Lora", serif;
-  font-size: 25px;
+  font-size: 30px;
   color: #131516;
   display: block;
   transition: 0.1s;
@@ -194,6 +202,21 @@ a#logo_link {
 
 
 #skill_box {
+  margin: 4px 2px 4px 2px;
+  font-family: "DM Sans", serif;
+  font-size: 16px;
+  border: none;
+  padding: 10px 24px;
+  text-align: center;
+  border-radius: 20px;
+  background-color:rgb(63, 255, 178);
+  color:rgb(29, 31, 35);
+  cursor: pointer;
+  transition: 1s;
+  display: inline-block;
+  }
+
+#skill_box:hover {
   margin: 4px 2px;
   font-family: "DM Sans", serif;
   font-size: 16px;
@@ -201,11 +224,33 @@ a#logo_link {
   padding: 10px 24px;
   text-align: center;
   border-radius: 20px;
-  background-color:rgb(63, 255, 178);;
-  color:rgb(29, 31, 35);
+  background-color:rgb(63, 255, 178);
   cursor: pointer;
-  transition: 0.5s;
-  }
+}
+
+#skill_box_text {
+  margin: 4px 2px;
+  font-family: "DM Sans", serif;
+  font-size: 16px;
+  border: none;
+  padding: 10px 24px;
+  text-align: center;
+  border-radius: 0;
+  background-color:rgb(63, 255, 178);
+  cursor: pointer;
+  display: none;
+}
+
+#skill_box_name:hover {
+  font-weight: bold;
+}
+
+#skill_box_name:hover + #skill_box_text {
+  display: inline;
+}
+
+
+
 
 
 
