@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="mystyle.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>
+      /* Set the width of the sidebar to 250px (show it) */
+    function openNav() {
+      document.getElementById("menu_sidepanel").style.width = "250px";
+    }
+
+    /* Set the width of the sidebar to 0 (hide it) */
+    function closeNav() {
+      document.getElementById("menu_sidepanel").style.width = "0";
+    } 
+  </script>
+</head>
+<body>
+  <div class="background"></div>
+
+  <button id="sidebar_btn" onclick="openNav()">&#9776;</button>
+
+  <div id="menu_sidepanel" class="sidepanel">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776;</a>
+    <div style="margin-left: 20%;">
+      <a href="#">CV</a>
+      <a href="#">Subpage</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </div>
+
+
+
+  <main>
+    <div id="header">
+      <h1">Curriculum Vitae</h1>
+    </div>
+
+    <div id="col content" class="col content">
+        <a id="logo_link" href="https://github.com/MadsLang"><img src="images/github_logo.svg" height="40" width="40"></a>
+        <a id="logo_link" href="https://www.linkedin.com/in/mads-lang-s%C3%B8rensen-472504140/"><img src="images/linkedin_logo.png" height="40" width="40"></a>
+        <h2>Education</h2>
+        <p>Here goes information about my education</p>
+        <br>
+        <h2>Work Experience</h2>
+        <p>Here goes information about my work experience</p>
+        <br>
+        <h2>Technical skills</h2>
+        <p>
+            <br>
+            <span id="skill_box">Python</span>
+            <span id="skill_box">R</span>
+            <span id="skill_box">HTML</span>
+            <span id="skill_box">NLP</span>
+            <span id="skill_box">Machine Learning</span>
+        </p>
+    </div>
+
+  </main>
+
+</body>
+</html>

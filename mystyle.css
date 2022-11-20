@@ -16,10 +16,23 @@ color: rgb(255, 61, 139); ligth red
 
 */
 
-
 body {
+	background: linear-gradient(-45deg, rgb(29, 31, 35), rgb(20, 22, 24), rgb(5, 12, 23), rgb(39, 1, 16));
+	background-size: 400% 400%;
+	animation: gradient 180s ease infinite;
   color:rgb(62, 236, 255);
-  background-color:rgb(29, 31, 35);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 
@@ -69,7 +82,7 @@ main {
   background-color:rgb(62, 236, 255);
   color:rgb(29, 31, 35);
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.5s;
   }
   
 #content_btn:hover {
@@ -82,6 +95,11 @@ main {
   border-radius: 20px;
   opacity: 0.8;
   cursor: pointer;
+}
+
+#content_btn:active {
+  font-weight: bolder;
+  background-color: rgb(255, 61, 139); 
 }
 
 
@@ -141,7 +159,7 @@ main {
   cursor: pointer;
   padding: 12px 15px;
   color:rgb(62, 236, 255);
-  background-color:rgb(29, 31, 35);
+  background-color: transparent;
   border: none;
 }
 
@@ -149,4 +167,45 @@ main {
   font-weight: bolder;
   color: rgb(151, 244, 255);
 } 
+
+
+input[type=text] {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color:rgb(217, 235, 247);
+  transition: width 0.4s ease-in-out;
+  border: 3px solid transparent;
+  display: block;
+}
+
+input:focus {
+  outline: none !important;
+  border: 3px solid rgb(157, 0, 255);
+}
+
+a#logo_link {
+  filter: invert(68%) sepia(98%) saturate(710%) hue-rotate(156deg) brightness(106%) contrast(103%);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+#skill_box {
+  margin: 4px 2px;
+  font-family: "DM Sans", serif;
+  font-size: 16px;
+  border: none;
+  padding: 10px 24px;
+  text-align: center;
+  border-radius: 20px;
+  background-color:rgb(63, 255, 178);;
+  color:rgb(29, 31, 35);
+  cursor: pointer;
+  transition: 0.5s;
+  }
+
+
 
