@@ -26,10 +26,10 @@
   <div id="menu_sidepanel" class="sidepanel">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#9776;</a>
     <div style="margin-left: 20%;">
-        <a href="/index.html">CV</a>       
+        <a href="/index.html">Home</a>       
         <a href="/cv.html">CV</a>
-        <a href="/cases.html">Cases</a>
-        <a href="/contact.html">Contact</a>
+        <a href="/projects.html">Projects</a>
+        <!-- <a href="/contact.html">Contact</a> -->
     </div>
   </div>
 
@@ -41,18 +41,49 @@
     </div>
 
     <div id="col content" class="col content">
-        <h2>Education</h2>
-        <p>Cand.Scient.soc (Master in Sociology), University of Copenhagen, 2023</p>
-        <p>Ba.Scient.soc (Bachelor in Sociology), University of Copenhagen, 2021</p>
+      <ul id="cv_list">
+        <li>Experienced in developing and implementing NLP/LLM/AI
+          solutions</li>
+          <br>
+        <li>Large knowledge and interest in the potential of AI within the media industry</li>
         <br>
-        <h2>Work Experience</h2>
+        <li>Multidisciplinary profile combining the best of data science with a background in social science</li>
+        <br>
+        <li>Extrovert and positive personality: Excellent at collaborating with a diverse range of backgrounds</li>
+      </ul>
+
+      <h2>Links</h2>
+      <a id="logo_link" href="https://github.com/MadsLang"><img src="images/github_logo.svg" height="40" width="40"></a>
+      <a id="logo_link" href="https://www.linkedin.com/in/madslangs/"><img src="images/linkedin_logo.png" height="40" width="40"></a>
+
+        <h2>Work experience</h2>
+        <p>2023-</p>
+        <h3>Data Scientist - Amsterdam Data Collective (ADC)</h3>
         <ul id="cv_list">
-          <li>Junior Consultant, Damvad Analytics, Jun 2021 - Present</li>
-          <li>Intern, Damvad Analytics, Jan 2021 - Jun 2021</li>
-          <li>Student researcher, VIVE, Feb 2019 - Jan 2021</li>
+          <li>Works hands-on with developing data and AI-solutions to client across different industries. I have particularly worked on projects involving NLP and language models. For example, I have worked with customer services by using language models to classify and extract information from e-mails to make the experience more efficient.</li>
+          <li>Works on all parts of the solutions: From compiling training data, training and finetuning the model, architecting deployment, CI-CD processes as well as setting up tools to interpret and monitor inference in production stages.</li>
+          <li>Furthermore, I have worked as a project manager on smaller projects.</li>
         </ul>
-        <br>
+        <br> 
+        <p>2021-2023</p>
+        <h3>Junior Consultant, Amsterdam Data Collective (ADC)</h3>
+        <ul id="cv_list">
+          <li>While only being part-time, I had a lot of responsibility and have worked hands-on on different data science projects. I worked with a wide range of tasks within NLP, data collection and more.</li>
+        </ul>
+        <br> 
+        <p>Spring 2021</p>
+        <h3>Intern, Damvad Analytics (now ADC)</h3>
+        <ul id="cv_list">
+          <li>As an intern, I was introduced to a wide range of tasks within a data science and data analytics consultancy.</li>
+        </ul>
+        <br> 
+        <p>2019–2020</p>
+        <h3>Junior Researcher, VIVE</h3>
+        <ul id="cv_list">
+          <li>Worked on research projects – particularly using register data from Statistics Denmark. My responsibilities included data analysis with a focus on causal inference and machine learning.</li>
+        </ul>
         <h2>Technical skills</h2>
+        <h3>Languages</h3>
         <p>
             <span id="skill_box">
               <span id="skill_box_name">Python</span>
@@ -76,23 +107,152 @@
             </span>
             <br>
             <span id="skill_box">
-              <span id="skill_box_name">Cloud</span>
-              <span id="skill_box_text">AWS, elementary</span>
-            </span>
-            <span id="skill_box">
-              <span id="skill_box_name">Web-scraping</span>
-              <span id="skill_box_text">Scrapy, Selenium and more</span>
-            </span>
-            <span id="skill_box">
               <span id="skill_box_name">Javascript</span>
-              <span id="skill_box_text">Very beginner</span>
+              <span id="skill_box_text">Beginner</span>
+            </span>
+            <br>
+          </p>
+          <h3>DevOps</h3>
+          <p>
+            <span id="skill_box">
+              <span id="skill_box_name">git</span>
+              <span id="skill_box_text">on a daily basis</span>
+            </span>
+            <span id="skill_box">
+              <span id="skill_box_name">package management</span>
+              <span id="skill_box_text">like pip and poetry</span>
+            </span>
+            <span id="skill_box">
+              <span id="skill_box_name">Docker</span>
+              <span id="skill_box_text">on a daily basis</span>
+            </span>
+            <br>
+            <span id="skill_box">
+              <span id="skill_box_name">CI-CD-pipelines</span>
+              <span id="skill_box_text">Azure Pipelines, Bitbucket and Github Actions</span>
+            </span>
+            <span id="skill_box">
+              <span id="skill_box_name">APIs</span>
+              <span id="skill_box_text">with FastApi and Azure Functions</span>
+            </span>
+            <br>
+            <span id="skill_box">
+              <span id="skill_box_name">Kubernetes</span>
+              <span id="skill_box_text">Mainly in Red Hat Openshift</span>
             </span>
         </p>
-        <h2>Links</h2>
-        <a id="logo_link" href="https://github.com/MadsLang"><img src="images/github_logo.svg" height="40" width="40"></a>
-        <a id="logo_link" href="https://www.linkedin.com/in/mads-lang-s%C3%B8rensen-472504140/"><img src="images/linkedin_logo.png" height="40" width="40"></a>
+        <h3>Cloud</h3>
+        <p>
+          <span id="skill_box">
+            <span id="skill_box_name">AWS</span>
+            <span id="skill_box_text">Certified Cloud Practitioner</span>
+          </span>
+          <span id="skill_box">
+            <span id="skill_box_name">Azure</span>
+            <span id="skill_box_text">Mostly AzureML</span>
+          </span>
+          <br>
+          <span id="skill_box">
+            <span id="skill_box_name">Infrastructure-as-Code</span>
+            <span id="skill_box_text">Terraform and Cloudformation</span>
+          </span>
+        </p>
+        <h3>Modelling/NLP</h3>
+        <p>
+          <span id="skill_box">
+            <span id="skill_box_name">Sklearn</span>
+            <span id="skill_box_text">a lot</span>
+          </span>
+          <span id="skill_box">
+            <span id="skill_box_name">Pytorch</span>
+            <span id="skill_box_text"></span>
+          </span>
+          <span id="skill_box">
+            <span id="skill_box_name">Spacy</span>
+            <span id="skill_box_text"></span>
+          </span>
+          <span id="skill_box">
+            <span id="skill_box_name">NLTK</span>
+            <span id="skill_box_text"></span>
+          </span>
+          <br>
+          <span id="skill_box">
+            <span id="skill_box_name">Hugging Face SDKs</span>
+            <span id="skill_box_text">transformers, datasets, setfit, optimum</span>
+          </span>
+          <br>
+          <span id="skill_box">
+            <span id="skill_box_name">Annotations tools</span>
+            <span id="skill_box_text">Doccano and Argilla</span>
+          </span>
+          <span id="skill_box">
+            <span id="skill_box_name">MLOps</span>
+            <span id="skill_box_text">Mostly MLFlow</span>
+          </span>
+        </p>
+        <h3>LLMOps</h3>
+        <p>
+          <span id="skill_box">
+            <span id="skill_box_name">Langchain</span>
+            <span id="skill_box_text">basic</span>
+          </span>
+          <span id="skill_box">
+            <span id="skill_box_name">OpenAI SDK</span>
+          </span>
+          <span id="skill_box">
+            <span id="skill_box_name">Llamaindex</span>
+          </span>
+        </p>
+        <h3>Visualization/dashboards</h3>
+        <p>
+          <span id="skill_box">
+            <span id="skill_box_name">Matplotlib</span>
+            <span id="skill_box_text">extensive</span>
+          </span>
+          <span id="skill_box">
+            <span id="skill_box_name">Seaborn</span>
+            <span id="skill_box_text">same as matplotlib</span>
+          </span>
+          <span id="skill_box">
+            <span id="skill_box_name">ggplot2</span>
+            <span id="skill_box_text">extensive</span>
+          </span>
+          <br>
+          <span id="skill_box">
+            <span id="skill_box_name">Streamlit</span>
+            <span id="skill_box_text">both demos and deployment</span>
+          </span>
+          <span id="skill_box">
+            <span id="skill_box_name">Plotly</span>
+            <span id="skill_box_text">a lot</span>
+          </span>
+          <span id="skill_box">
+            <span id="skill_box_name">R Shiny</span>
+            <span id="skill_box_text">medium</span>
+          </span>
+        </p>
+        <br>
+        <h2>Education</h2>
+        <p>2021-2023</p>
+        <h3>Master's degree, Sociology</h3>
+        <h3>University of Copenhagen</h3>
+        <ul id="cv_list">
+          <li>In my thesis, I collaborated with Ekstra Bladet, where I examined how news values in the news
+            content affects audience engagement on social media. In a large-scale study, I used a range of NLP-models to analyze three years of news shared by EB on Facebook. The thesis won the award for best master's thesis 2022/2023 at Institute of Sociology.</li>
+          <li>During my studies, I took several elective courses related to data science, e.g. “Natural Language Processing” at Institute of Computer Science.</li>
+        </ul> 
+        <br>
+        <p>2017-2021</p>
+        <h3>Bachelor's degree, Sociology</h3>
+        <h3>University of Copenhagen</h3>
+        <ul id="cv_list">
+          <li>My thesis examined how social networks of interactions on 6000 Danish Facebook-groups affects the amount of crime in the local neighborhoods.</li>
+          <li>During my studies, I took several elective courses related to data science, e.g. “Econometrics
+            and Machine Learning” and ”Introduction to Social Data Science” at Center for Social Data Science, University of Copenhagen.</li>
+        </ul> 
+        <br>
+        <br>
     </div>
-
 
   </main>
   <footer>
